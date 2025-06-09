@@ -135,7 +135,7 @@ jobs:
 
       - name: Set Yui Release (>= 5.17.0)
         if: env.IS_COMPATIBLE_CONT == 'true'
-        run: echo "Yui_RELEASE=continuous" | Out-File -Append -FilePath $env:GITHUB_ENV
+        run: echo "Yui_RELEASE=v1.0.9" | Out-File -Append -FilePath $env:GITHUB_ENV
 
       - name: Set Yui Release (< 5.17.0) 
         if: env.IS_COMPATIBLE_CONT == 'false'
